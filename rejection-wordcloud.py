@@ -116,7 +116,7 @@ def main():
     for label in LABELS:
       query_str += f'label:{label} '
     query_str += '}'  
-    print(query_str)
+
     rejection_emails = ListMessagesMatchingQuery(service, USER_ID, query_str)
     
     wordList = []
